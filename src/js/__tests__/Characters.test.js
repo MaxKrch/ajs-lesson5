@@ -103,11 +103,20 @@ test("damage with kill", () => {
 
 test("create characters", () => {
 	const name = "Maks";
+	const lvl = 1;
 	const bowerman = new Bowerman(name);
 	const swordsman = new Swordsman(name);
 	const magician = new Magician(name);
 	const daemon = new Daemon(name);
 	const undead = new Undead(name);
 	const zombie = new Zombie(name);
+
+	expect(bowerman.level).toBe(lvl);
+	expect(swordsman.level).toBe(lvl);
+	expect(magician.level).toBe(lvl);
+	expect(daemon.level).toBe(lvl);
+	expect(undead.level).toBe(lvl);
+	expect(zombie.level).toBe(lvl);
+
 })
  
